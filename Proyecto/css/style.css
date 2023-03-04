@@ -1,0 +1,43 @@
+
+#calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dia {
+    height: 100px;
+    display: inline-block;
+    width: 14%;
+    padding: 10px;
+    vertical-align: top;
+    margin-top: -4px;
+    margin-right: -4px;
+    
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+  .con-eventos {
+    background-color: red;
+  }
+  
+  .eventos-dia {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    margin-left: 5px;
+  }
+table {
+    width: 500px;
+    border: solid 1px red;
+}
+
+.dia.hoy {
+  background-color: skyblue;
+  color: white;
+}

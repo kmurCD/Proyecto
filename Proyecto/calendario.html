@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calendario</title>
+
+</head>
+<body>
+    <h1>Agenda virtual</h1>
+    <p>Bienvenido, <span id="nameID"></span> <span id="lastName"></span></p>
+
+    <form>
+		<label for="nombre">Nombre del evento:</label>
+		<input type="text" id="nombre" nombre="nombre">
+		<br>
+
+		<label for="fecha">Fecha del evento:</label>
+		<input type="date" id="fecha" nombre="fecha">
+		<br>
+
+		<label for="hora">Hora del evento:</label>
+		<input type="time" id="hora" name="hora">
+		<br>
+
+		<button type="button" onclick="agregarEvento()">Agregar evento</button>
+	</form>
+
+	<h2>Eventos</h2>
+	
+	<div id="eventos">
+		<table id="tabla-eventos">
+			<thead>
+			  <tr>
+				<th>Nombre</th>
+				<th>Fecha</th>
+				<th>Hora</th>
+				<th>Eliminar</th>
+			  </tr>
+			</thead>
+			<tbody id="lista-eventos"></tbody>
+		  </table>
+	</div>
+	
+	<h2>Calendario <span id="nombreMes"></span></h2>
+	<div id="calendario"></div>
+	
+	<script src="js/calendario.js"></script>
+    
+</body>
+</html>
